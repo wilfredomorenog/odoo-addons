@@ -1,0 +1,162 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* ox_web_partner_credit_amount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-01 21:50+0000\n"
+"PO-Revision-Date: 2018-05-01 21:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.content_new_residual_amount
+msgid "<b>Consult credit</b>"
+msgstr "<b>Consulta crédito</b>"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_amount_residual
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_amount_residual
+msgid "Amount residual"
+msgstr "Monto residual"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.view_partner_credit_amount
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.index
+msgid "Consultar"
+msgstr "Consultar"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_partner_credit_amount_create_uid
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_partner_credit_amount_create_date
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_create_date
+msgid "Created on"
+msgstr "Creado"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_partner_credit_amount_display_name
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_display_name
+msgid "Display Name"
+msgstr "Nombre Público"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_partner_credit_amount_file
+msgid "File"
+msgstr "Archivo"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,help:ox_web_partner_credit_amount.field_partner_credit_amount_file
+msgid "File format .csv separate for ;"
+msgstr "Formato de archivo en .csv y separado por coma ,"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.view_partner_amount_residual_form
+msgid "Historical residual amount"
+msgstr "Historico de cambios de crédito"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_partner_credit_amount_id
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_partner_credit_amount___last_update
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history___last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_partner_credit_amount_write_uid
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_partner_credit_amount_write_date
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_write_date
+msgid "Last Updated on"
+msgstr "Actualizado"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.index
+msgid "Referencia"
+msgstr "Referencia"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.index
+msgid "Nombre cliente:"
+msgstr "Nombre cliente:"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model,name:ox_web_partner_credit_amount.model_res_partner
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_partner_id
+msgid "Partner"
+msgstr "Asociado"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.index
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.view_partner_credit_amount
+msgid "Partner credit amount"
+msgstr "Crédito de cliente"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.index
+msgid "Referencia:"
+msgstr "Referencia:"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model.fields,field_description:ox_web_partner_credit_amount.field_res_partner_residual_history_ids
+msgid "Residual history"
+msgstr "Historico de crédito"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.index
+msgid "Saldo pendiente:"
+msgstr "Saldo pendiente:"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.view_partner_credit_amount
+msgid "This wizard allows you to massively update customer credit. The file must have 3 columns: ID, name and credit. In addition to being in csv format separated by comma ','"
+msgstr "This wizard allows you to massively update customer credit. The file must have 3 columns: ID, name and credit. In addition to being in csv format separated by comma ','"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.view,arch_db:ox_web_partner_credit_amount.view_partner_credit_amount
+msgid "Update"
+msgstr "Actualizar"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.ui.menu,name:ox_web_partner_credit_amount.menu_partner_amount_residual
+msgid "Update amount residual"
+msgstr "Actualizar crédito de cliente"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.actions.act_window,name:ox_web_partner_credit_amount.act_partner_amount_residual
+msgid "Update partner credit amount"
+msgstr "Actualizar crédito de cliente"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model,name:ox_web_partner_credit_amount.model_partner_credit_amount
+msgid "partner.credit.amount"
+msgstr "partner.credit.amount"
+
+#. module: ox_web_partner_credit_amount
+#: model:ir.model,name:ox_web_partner_credit_amount.model_res_partner_residual_history
+msgid "res.partner.residual.history"
+msgstr "res.partner.residual.history"
+

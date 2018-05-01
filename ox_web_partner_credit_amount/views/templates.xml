@@ -1,0 +1,66 @@
+<openerp>
+    <data>
+        <template id="index">
+            <t t-call="website.layout">
+                <t t-set="title">Partner credit amount</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <form action="/partner/credit/" method="get" data-model_name="res.partner"
+                              class="s_website_form form-horizontal container-fluid mt32"
+                              enctype="multipart/form-data">
+                            <div class="form-group form-field o_website_form_required_custom">
+                                <label class="col-md-3 col-sm-4 control-label" for="vat">Reference
+                                </label>
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="ref" t-att-value="request.params.get('ref', '')" required=""/>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <button type="submit" class="btn btn-primary">Consult</button>
+                                </div>
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-4 col-sm-8">
+                                    <t t-foreach="partners" t-as="partner">
+                                        <p>
+                                            <h4>Reference:
+                                                <t t-esc="partner.ref"/>
+                                            </h4>
+                                            <h4>Name:
+                                                <t t-esc="partner.name"/>
+                                            </h4>
+                                            <h4>Credit:
+                                                <t t-esc="'{0:,.2f}'.format(partner.amount_residual)"/>
+                                            </h4>
+                                        </p>
+                                    </t>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="content_new_residual_amount" inherit_id="website.layout" groups="base.group_public">
+            <xpath expr="//ul[@id='top_menu']/li[1]" position="after">
+                <li groups="base.group_public">
+                    <a t-attf-href="/partner/credit">
+                        <b>Consult credit</b>
+                    </a>
+                </li>
+            </xpath>
+        </template>
+
+
+        <!--<template id="show_sign_in" customize_show="True" inherit_id="website.layout" name="Show Sign In">-->
+        <!--<xpath expr="//ul[@id='top_menu']" position="inside">-->
+        <!--<li class="divider" groups="base.group_public"/>-->
+        <!--<li groups="base.group_public">-->
+        <!--<a t-attf-href="/web/login">-->
+        <!--<b>Sign in</b>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--</xpath>-->
+        <!--</template>-->
+    </data>
+</openerp>

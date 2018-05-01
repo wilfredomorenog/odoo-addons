@@ -1,0 +1,57 @@
+<openerp>
+    <data>
+        <record id="view_partner_amount_residual_form" model="ir.ui.view">
+            <field name="name">res.partner.amount_residual</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='category_id']" position="after">
+                        <field name="amount_residual" readonly="True"/>
+                    </xpath>
+                    <xpath expr="//page[@name='sales_purchases']" position="after">
+                        <page string="Historical residual amount">
+                            <field name="residual_history_ids" readonly="True">
+                                <tree string="Historical residual amount">
+                                    <field name="amount_residual"/>
+                                    <field name="write_uid"/>
+                                    <field name="write_date"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_partner_credit_amount" model="ir.ui.view">
+            <field name="name">Partner credit amount</field>
+            <field name="model">partner.credit.amount</field>
+            <field name="arch" type="xml">
+                <form string="Partner credit amount">
+                    <label string="This wizard allows you to massively update customer credit. The file must have 3 columns: ID, name and credit. In addition to being in csv format separated by comma ',' "/>
+                    <newline/>
+                    <group>
+                        <field name="file"/>
+                    </group>
+                    <footer>
+                        <button name="update_partner_credit_amount" string="Update" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="act_partner_amount_residual" model="ir.actions.act_window">
+            <field name="name">Update partner credit amount</field>
+            <field name="res_model">partner.credit.amount</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+
+        <menuitem name="Update amount residual" id="menu_partner_amount_residual" parent="base.menu_administration"
+                  action="act_partner_amount_residual" sequence="2"/>
+    </data>
+</openerp>
